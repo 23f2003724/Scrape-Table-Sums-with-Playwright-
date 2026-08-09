@@ -1,0 +1,11 @@
+{
+  "name": "playwright-table-scraper",
+  "version": "1.0.0",
+  "description": "Scrape JS-rendered tables and sum all numbers using Playwright",
+  "scripts": {
+    "scrape": "node scrape.js"
+  },
+  "dependencies": {
+    "@playwright/test": "1.44.0"
+  }
+}
