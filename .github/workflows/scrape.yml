@@ -8,6 +8,8 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.44.0-jammy
 
     steps:
       - name: Checkout repository
@@ -20,9 +22,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Install Playwright browsers
-        run: npx playwright install chromium --with-deps
 
       - name: 23f2003724@ds.study.iitm.ac.in - Sum table values with Playwright
         run: node scrape.js
